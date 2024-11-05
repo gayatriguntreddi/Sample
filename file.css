@@ -1,13 +1,18 @@
-.myFile {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   flex-direction: column;
-   background-color: ivory;
-   height: 30vh;
+
+
+table  {
+   width: 40%;
+    border-collapse: collapse;
+    margin-left: auto;
+ margin-right: auto;
+ 
 }
-form
-{
-    align-items: center;
-    background-color: ivory;
+
+th,td {
+    
+    border: 1px solid rgb(23, 23, 23);
+   
+}
+td{
+    text-align: center;
 }

@@ -1,21 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link  rel="stylesheet" href="file.css" />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="file.css">
+  <title>Document</title>
 </head>
 <body>
-  <div class="myFile">
- <p> Upload a file:</p>
+  <p style="text-align: center;  color: brown;"> 1.The Main Table</p>
+  <table>
+    <tr>
+      <th>Name </th>
+      <th>Age</th>
+      <th>Gender</th>
+    </tr>
+    <tr>
+      <td>Gayatri</td>  
+      <td>25</td>
+      <td>Female</td>
+    </tr>
+    <tr>
+      <td>Chandu</td>
+      <td>29</td>
+      <td>Male</td>
+    </tr>
+  </table>
+ <p style="text-align: center; color: brown;"> 2. How to add additional columns? How to add additional rows? How to span columns?</p>
+ <table>
+  <tr>
+    <th colspan="2" >Name </th>
+    <th>Age</th>
+    <th>Marks</th>
+  </tr>
+  <tr>
+    <td>Gayatri</td>  
+    <td>Guntreddi</td>
+    <td>25</td>
+    <td>976</td>
+  </tr>
+  <tr>
+    <td>Chandu</td>
+    <td>Teella</td>
+    <td>29</td>
+    <td>985</td>
+  </tr>
+  <tr>
+    <td>Jaswanth</td>
+    <td>Guntreddi</td>
+    <td>23</td>
+    <td>945</td>
+  </tr>
+  <tr>
+    <th>Avg Marks</th>
+    <td colspan="3" ">968</td>
+  </tr>
+</table>
 
-<form action="#" style="margin: 30px;">
-  <input type="file" id="myFile" name="filename">
-</form>
+<p style="text-align: center;color: brown;">3.Apply styles to have different width for each column Name - 60% Age - 10% Gender- 20%</p>
 
-<button type="submit">submit</button>
-</div>
+<table>
+  <tr>
+    <th  style="width: 60%;">Name </th>
+    <th style="width: 10%;">Age</th>
+    <th style="width: 20%;">Gender</th>
+  </tr>
+  <tr>
+    <td>Gayatri</td>  
+    <td>25</td>
+    <td>Female</td>
+  </tr>
+  <tr>
+    <td>Chandu</td>
+    
+    <td>29</td>
+    <td>Male</td>
+  </tr>
+  <tr>
+    <td>Jaswanth</td>
+    
+    <td>23</td>
+    <td>Male</td>
+  </tr>
+  
+</table>
+
+
 </body>
 </html>
