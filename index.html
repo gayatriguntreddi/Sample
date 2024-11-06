@@ -7,7 +7,215 @@
   <title>Document</title>
 </head>
 <body>
+  <p style="text-align: center;  color: brown;"> The Main Table</p>
+  <table>
+    <tr>
+      <th>Name </th>
+      <th>Age</th>
+      <th>Gender</th>
+    </tr>
+    <tr>
+      <td>Gayatri</td>  
+      <td>25</td>
+      <td>Female</td>
+    </tr>
+    <tr>
+      <td>Chandu</td>
+      <td>29</td>
+      <td>Male</td>
+    </tr>
+  </table>
+ <p style="text-align: center; color: brown;"> 1. How to add additional columns? How to add additional rows? How to span columns?</p>
+ <table>
+  <tr>
+    <th colspan="2" >Name </th>
+    <th>Age</th>
+    <th>Marks</th>
+  </tr>
+  <tr>
+    <td>Gayatri</td>  
+    <td>Guntreddi</td>
+    <td>25</td>
+    <td>976</td>
+  </tr>
+  <tr>
+    <td>Chandu</td>
+    <td>Teella</td>
+    <td>29</td>
+    <td>985</td>
+  </tr>
+  <tr>
+    <td>Jaswanth</td>
+    <td>Guntreddi</td>
+    <td>23</td>
+    <td>945</td>
+  </tr>
+  <tr>
+    <th>Avg Marks</th>
+    <td colspan="3" ">968</td>
+  </tr>
+</table>
 
+<p style="text-align: center;color: brown;">2.Apply styles to have different width for each column Name - 60% Age - 10% Gender- 20%</p>
+
+<table>
+  <tr>
+    <th  style="width: 60%;">Name </th>
+    <th style="width: 10%;">Age</th>
+    <th style="width: 20%;">Gender</th>
+  </tr>
+  <tr>
+    <td>Gayatri</td>  
+    <td>25</td>
+    <td>Female</td>
+  </tr>
+  <tr>
+    <td>Chandu</td>
+    <td>29</td>
+    <td>Male</td>
+  </tr>
+  <tr>
+    <td>Jaswanth</td>
+    <td>23</td>
+    <td>Male</td>
+  </tr>
+  
+</table>
+
+
+<p style="text-align: center;color: brown;">3. How to merge two rows into a single data cell?</p>
+
+<table >
+  <tr>
+    <th>Name </th>
+    <th>Subject</th>
+    <th>Marks</th>
+ </tr>
+  <tr>
+    <td rowspan="2">Gayatri</td> 
+    <td>Math</td> 
+    <td>25</td>  
+  </tr>
+  <tr>  
+    <td>Science</td>
+    <td>26</td>
+    </tr>
+  <tr>
+    <td rowspan="2">Chandu</td>
+    <td>Math</td>
+    <td>29</td>
+   
+  </tr>
+  <tr>  
+    <td>Science</td>
+    <td>27</td>
+    </tr>     
+</table>
+
+
+<p style="text-align: center;color: brown;">4. What is the purpose of align property in table cells?</p>
+<p style="text-align: center;color: rgb(108, 165, 42);">by using align property arranged the table to Center, we can use this property in inline </p>
+
+<table align="center">
+  <tr>
+    <th>Name </th>
+    <th>Age</th>
+    <th>Gender</th>
+  </tr>
+  <tr>
+    <td>Gayatri</td>  
+    <td>25</td>
+    <td>Female</td>
+  </tr>
+  <tr>
+    <td>Chandu</td>
+    <td>29</td>
+    <td>Male</td>
+  </tr>
+
+</table>
+
+<p style="text-align: center;color: brown; ">5.cellpadding -  is this valid property? <br> Yes valid </p>
+<table cellpadding = "20">
+  <tr>
+    <th>Name </th>
+    <th>Age</th>
+    <th>Gender</th>
+  </tr>
+  <tr>
+    <td>Gayatri</td>  
+    <td>25</td>
+    <td>Female</td>
+  </tr>
+  <tr>
+    <td>Chandu</td>
+    <td>29</td>
+    <td>Male</td>
+  </tr>
+</table>
+
+<p style="text-align: center;color: brown; ">6.How to expand a cell to two rows and 3 columns?</p>
+<table>
+  <tr>
+    <th>Name </th>
+    <th>Game Name</th>
+    <th colspan="3">Round No</th>
+    <th>Avg Score</th>
+ </tr>
+  <tr>
+    <td rowspan="2">Gayatri</td> 
+    <td>Candy Crush</td>
+    <td>Round1</td> 
+    <td>Round2</td> 
+    <td>Round3</td> 
+    <td>250</td>  
+  </tr>
+  <tr>
+   <td>Block Blast</td>
+    <td>Round1</td> 
+    <td>Round2</td> 
+    <td>Round3</td> 
+    <td>300</td>  
+  </tr>
+ 
+    <td rowspan="2">Chandu</td>
+    <td>Candy Crush</td>
+    <td>Round1</td> 
+    <td>Round2</td> 
+    <td>Round3</td> 
+    <td>290</td>
+   
+  </tr>
+  <tr>
+    <td>Block Blast</td>
+    <td>Round1</td> 
+    <td>Round2</td> 
+    <td>Round3</td> 
+    <td>350</td>  
+  </tr>
+       
+</table>
+
+<p style="text-align: center;color: brown; ">7. What happens if you use the border attribute on a table element in modern HTML? </p>
+  <table border="5">
+    <tr>
+      <th>Name </th>
+      <th>Age</th>
+      <th>Gender</th>
+    </tr>
+    <tr>
+      <td>Gayatri</td>  
+      <td>25</td>
+      <td>Female</td>
+    </tr>
+    <tr>
+      <td>Chandu</td>
+      <td>29</td>
+      <td>Male</td>
+    </tr>
+  </table>
+  
+  <p style="text-align: center;color: rgb(165, 42, 165); size: 10vh; ">9. Styled Table </p>
   <table cellpadding = "15" class="style" >
     <tr>
       <th rowspan="2">Product </th>
