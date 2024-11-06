@@ -16,3 +16,9 @@ th,td {
 td{
     text-align: center;
 }
+.style{
+tr :nth-child(even){
+    background-color: antiquewhite;
+}
+
+}
